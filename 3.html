@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=jHVOub6htdwKK3vqxWLcup5OE4ll5TXJP33e-NET8tqGlshTpe4LuPzeK5lowR9dFzfLIqtoaB9HYwHi1eompWzfxmTPIVV2iKVb1Frgzlv9PLCw1uZBQhRa0TIf5WeoXLq7-H-RnR2Lmyb5-5eKIVMczi7Bggb3670y8sFG0Z0tG-PxBDaImjZdfkaSbCaIekNX264O4mAY04WcOLR5Mllwtxomo5_mX-sNLEmMqIH99Rko4jUNC-PVEN8EH27TJt-x-g4ndOwp2-75yqOoocZ6PJExhEgap1_oVU71k4RCE2nnZanbtLG3_FD76sDUPS6Csf63SJyXLlPDQsjHZVJz0qDbXOSkKra_xG20xZ53z1JRsm8ABK9rofFDK91sq_RGy-IgDQB2BLQEPjeAaVleVFYtumprsOctQZKY6j4CecutksAHW1EHrVV58LDDuBpWomQ6NVKPgY0D9vlWWa2DiD5-UseATGYXwyo7SA3rvUL-3lsSfkjTc1W4EeAnBPmo6BdPao-r1DfbDVNJvb4mplUNKmeSrWS3Pw9yTPH6VgxGlqyzGFVX3q62fnayKYoiw4iB-j3RSVCSmnuSDEy7M6-DcEHk4jx1zR8jwhF1lIXMvmloufZXk2d3LNfNSZq-4sCx5EznpvUVQW-s-oxv3xe9fM7OEOu4BakaqR9LDeCPtCgz-gFcmSgniPWS0ZWqxKb4DgTMK0x4THfEg8jh2UCo_SAYowY7j73gDtIZ9i7DKddhFRlfwAqRgPvUTceY1JxB7CMeEit-d57K2ak5U545pUXXNtd9mTKX_YwYYQnMoakGGghEhHpCJUaIp0MYzC98NnLM0cVI9aC-tN_quiYvj6va9GO27ZiSzLLzq8E6tRdErnsA2hGzJV8RdlN5jhNHxlXrgDJEQ2iJdREO72E8-hHI023OwN9FDTV470yOMfKbx8Tn1oZSAEVtmtkEqVz5iBWCtVa7O966vNd-JgqYOa4a8f51Q8kVkSSDS3Aq7nAPrn02SFE64q_UrpE4GS4RcCifnEV92xmshCzFhQvlCBDmJJFaNdoWjHQtODl6WgMoShF26jml78P01sJMOrfH4p_JPeoX9mrgY8z2QRa3icP1zxzU3wW6qYh42CUMoGmT7ST23cHtp18OlCHdjdjbXNOyxJiwcVd1u4V_hsb4D27i-C8zbLCs68k" charset="UTF-8"></script></head>
+<body>
+<!--
+Обязательное задание.
+
+Необходимо вывести в консоль значения выражений:
+10 + 10 + "10"
+10 + "10" + 10
+10 + 10 + +"10"
+10 / -""
+10 / +"2,5"
+В этих выражениях нет опечаток, вам их нужно скопировать и вывести в консоль.
+
+Над каждым выводом в консоль необходимо объяснить почему мы получаем такой
+результат.
+
+Объяснения пишите в таком формате:
+/*
+1. 4 умножаем на 2 получаем 8.
+2. 3 минус 8 получаем -5.
+3. С помощью console.log выводим число -5 в консоль.
+*/
+console.log(3 - 4 * 2);
+-->
+<script>
+  "use strict";
+console.log(10 + 10 + "10"); //2010
+console.log(10 + "10" + 10); //101010
+console.log(10 + 10 + + "10");  //30
+console.log(10 / -""); //-infinity
+console.log(10 / +"2,5"); //Nan
+
+/*
+1. при сложении 10+10 получится 20 а "10"мы не считаем так как это строка.по правилу число слипается со строкой
+2.так как читается с лева на право то 10 +строка слипается +10 и полчается 10+строка+10 =101010
+3.так как стоит унарное значение строка превращает в число так и полчается при сложнии 10 3 раза полчится 30
+4.хдест также унарное число строка превращается в число /- на неизвнстное число либо на 0 то может выйти любое число
+5.должно было полчится 4 но изза звпятой не читается число
+
+  
+</script>
+</body>
+</html>
